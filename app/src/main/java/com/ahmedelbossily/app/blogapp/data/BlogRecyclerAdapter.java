@@ -1,4 +1,4 @@
-package com.ahmedelbossily.app.blogapp.Data;
+package com.ahmedelbossily.app.blogapp.data;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ahmedelbossily.app.blogapp.Model.Blog;
+import com.ahmedelbossily.app.blogapp.model.Blog;
 import com.ahmedelbossily.app.blogapp.R;
 import com.squareup.picasso.Picasso;
 

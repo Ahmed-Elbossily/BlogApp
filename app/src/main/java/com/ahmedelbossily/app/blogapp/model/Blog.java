@@ -1,4 +1,4 @@
-package com.ahmedelbossily.app.blogapp.Model;
+package com.ahmedelbossily.app.blogapp.model;
 
 /**
  * Created by a_anw on 11/03/2018.

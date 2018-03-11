@@ -12,4 +12,9 @@
     <string name="date_created">Date created:</string>
     <string name="post_description">Post Description</string>
     <string name="submit_text">Submit</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_account">Email</string>
+    <string name="password_account">Password</string>
+    <string name="create_account_act">Create Account</string>
 </resources>

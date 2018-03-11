@@ -1,4 +1,4 @@
-package com.ahmedelbossily.app.blogapp.Activites;
+package com.ahmedelbossily.app.blogapp.activites;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,8 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.ahmedelbossily.app.blogapp.Data.BlogRecyclerAdapter;
-import com.ahmedelbossily.app.blogapp.Model.Blog;
+import com.ahmedelbossily.app.blogapp.data.BlogRecyclerAdapter;
+import com.ahmedelbossily.app.blogapp.model.Blog;
 import com.ahmedelbossily.app.blogapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -20,6 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PostListActivity extends AppCompatActivity {
@@ -84,6 +85,7 @@ public class PostListActivity extends AppCompatActivity {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Blog blog = dataSnapshot.getValue(Blog.class);
                 blogList.add(blog);
+                Collections.reverse(blogList);
                 blogRecyclerAdapter = new BlogRecyclerAdapter(PostListActivity.this, blogList);
                 recyclerView.setAdapter(blogRecyclerAdapter);
                 blogRecyclerAdapter.notifyDataSetChanged();

@@ -1,4 +1,4 @@
-package com.ahmedelbossily.app.blogapp.Activites;
+package com.ahmedelbossily.app.blogapp.activites;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -65,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                 }
+            }
+        });
+
+        createAccountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CreateAccountActivity.class));
+                finish();
             }
         });
     }

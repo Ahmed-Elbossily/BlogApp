@@ -1,4 +1,4 @@
-package com.ahmedelbossily.app.blogapp.Activites;
+package com.ahmedelbossily.app.blogapp.activites;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
